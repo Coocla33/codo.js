@@ -1,0 +1,41 @@
+.codo-container {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.codo-container .codo {
+    position: absolute;
+    width: max-content;
+    text-align: center;
+}
+
+/* Animation Classes */
+.in {
+    animation: 1s in ease forwards;
+}
+
+.out {
+    animation: 1s out ease forwards;
+}
+
+/* Animations */
+@keyframes in {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes out {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
